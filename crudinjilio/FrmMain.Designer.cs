@@ -45,6 +45,7 @@
             this.txtNama1 = new System.Windows.Forms.Label();
             this.CBLevel1 = new System.Windows.Forms.Label();
             this.txtID1 = new System.Windows.Forms.Label();
+            this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,11 +199,22 @@
             this.txtID1.TabIndex = 36;
             this.txtID1.Text = "ID pengguna";
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(732, 291);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 33);
+            this.btnPrint.TabIndex = 53;
+            this.btnPrint.Text = "print";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 587);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDelete);
@@ -248,5 +260,6 @@
         private System.Windows.Forms.Label txtNama1;
         private System.Windows.Forms.Label CBLevel1;
         private System.Windows.Forms.Label txtID1;
+        private System.Windows.Forms.Button btnPrint;
     }
 }

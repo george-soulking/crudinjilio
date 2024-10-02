@@ -205,6 +205,12 @@ namespace crudinjilio
             }
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            FrmPengguna frmPengguna = new FrmPengguna();
+            frmPengguna.Show();
+        }
+
         private void FrmMain_Load(object sender, EventArgs e)
         {
             try
